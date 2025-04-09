@@ -188,11 +188,16 @@ footer p {
 
 @media (min-width: 960px) {
     #swt-hrt .wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5em;
     }
 
     #swt-hrt h1 {
         margin-top: 0;
+    }
+
+    #swt-hrt_images {
+        grid-template-rows: repeat(2, 1fr);
     }
 }
